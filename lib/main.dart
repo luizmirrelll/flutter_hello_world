@@ -15,7 +15,23 @@ class MyApp extends StatelessWidget {
           title: Text("aplikasi hello world"),
         ),
         body: Center(
-          child: Text("hello wolrd"),
+          child: Container(
+              color: Colors.lightBlue,
+              width: 150,
+              height: 100,
+              child: Text(
+                "saya sedang melatih kemampuan fluter saya",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20),
+                // textAlign: TextAlign.center,
+                // maxLines: 2,
+                // overflow: TextOverflow.clip,
+                // softWrap:
+                //     true, //soft warp bila false akan menampilkan terpotong
+              )),
         ),
       ),
     );
